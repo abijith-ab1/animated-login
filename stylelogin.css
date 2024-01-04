@@ -1,0 +1,120 @@
+*{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: #191919;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 35rem;
+    width: 25rem;
+    flex-direction: column;
+    background-color: black;
+    color: whitesmoke;
+}
+.form-container:hover{
+    box-shadow: 0px 0px 25px 0px;
+    border: 2px solid;
+    cursor: grabbing;
+}
+.login-titile{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+.usrName,.usrpassword{
+    border-radius: 3rem;
+    border: 2px solid cyan;
+    padding: 1rem 2rem;
+    text-align: center;
+    width: 20rem;
+    color: whitesmoke;
+    outline: none;
+    margin: 1rem;
+    font-size: 1.2rem;
+    background: transparent;
+    transition: all .2s ease-in-out;
+}
+.usrName:focus,.usrpassword:focus{
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+    0%{
+        color: green;
+        border-color: green;
+    }
+    10%{
+        color: yellow;
+        border-color: yellow;
+
+    }
+    20%{
+        color: hotpink;
+        border-color: hotpink;
+    }
+    30%{
+        color: red;
+        border-color: red;
+    }
+    40%{
+        color: purple;
+        border-color: purple;
+    }
+    50%{
+        color: blueviolet;
+        border-color: blueviolet;
+    }
+    60%{
+        color: cyan;
+        border-color: cyan;
+    }
+    70%{
+        color: olive;
+        border-color: olive;
+    }
+    80%{
+        color: wheat;
+        border-color: wheat;
+    }
+    90%{
+        color: salmon;
+        border-color: salmon;
+    }
+    100%{
+        color: cadetblue;
+        border-color: cadetblue;
+    }
+    
+}
+.loginbtn{
+    border-radius: 6rem;
+    outline: none;
+    margin-left: 51px;
+    width: 15rem;
+    background: transparent;
+    color: darkgray;
+    border: 2px solid green;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.loginbtn:hover{
+    background: #191919;
+    border: 2px solid whitesmoke;
+}
